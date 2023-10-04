@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.fondo {
+    position: fixed;
+    z-index: -1;
+    height: 100%;
+}
+
+.contenedor {
+    height: 39em;
+    width: 80em;
+    position: relative;
+    margin: 0 auto;
+    top: 10em;
+    background-color: rgba(0, 0, 0, 0.438);
+    color: rgb(0, 195, 255);
+}
+
+.fila1 {
+    font-weight: bold;
+    font-size: 163px;
+    text-align: center;
+}
+
+.fila2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    font-size: 53px;
+    top: 2em;
+}
+
+.paginas {
+    display: grid;
+    text-align: center;
+}
+
+.imagenes {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
