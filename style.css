@@ -2,46 +2,70 @@
     margin: 0;
     padding: 0;
     border: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgba(0, 0, 0, 0.719);
+    font-weight: 100;
 }
 
 .fondo {
+    width: 100%;
+    height: 100%;
     position: fixed;
     z-index: -1;
+    object-fit: cover;
+}
+
+html, body {
     height: 100%;
 }
 
 .contenedor {
-    height: 39em;
-    width: 80em;
-    position: relative;
-    margin: 0 auto;
-    top: 10em;
-    background-color: rgba(0, 0, 0, 0.438);
-    color: rgb(0, 195, 255);
+    width: 100%;
+    height: 100%;
+    max-height: 100vh;
+    overflow-y: auto;
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(184, 174, 174, 0.178);
 }
 
-.fila1 {
-    font-weight: bold;
-    font-size: 163px;
+.contenido {
+    background-color: rgba(184, 174, 174, 0.24);
+    display: grid;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    padding: 50px;
+    gap: 40px;
 }
 
 .fila2 {
-    position: relative;
     display: flex;
-    justify-content: center;
-    gap: 4rem;
-    font-size: 53px;
-    top: 2em;
+    flex-wrap: wrap;
+    gap: 50px;
 }
 
 .paginas {
-    display: grid;
-    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .imagenes {
-    width: 200px;
-    height: 200px;
+    width: 170px;
+    height: 170px;
     border-radius: 100%;
+    transition: .9s;
+}
+
+.imagenes:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 1000px){
+    .imagenes {
+        width: 130px;
+        height: 130px;
+    }
 }
